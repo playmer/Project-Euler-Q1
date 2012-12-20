@@ -13,8 +13,20 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        int sum = 0;
+        
+        for (int i = 1; i < 1000; i++)
+        {
+            if ((i % 3) == 0)
+            {
+                sum = sum + i;
+            }
+            else if ((i % 5) == 0)
+            {
+                sum =  sum + i;
+            }
+        }
+        NSLog(@"%d", sum);
         
     }
     return 0;
